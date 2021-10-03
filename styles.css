@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Neon;
+    src: url(./fonts/Neon.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-family: Neon;
+    font-size: 250px;
+    font-weight: 100;
+    color: red;
+    text-shadow: red 0px 0px 30px;
+    user-select: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container h1 span {
+    animation: colon 1s infinite alternate;
+}
+
+@keyframes colon {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
